@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-orange: #FF6B35;
+    --brand-yellow: #FFB800;
+    --brand-green: #52C41A;
+    --brand-blue: #1890FF;
+
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-hint: #999999;
+    --bg-page: #F7F8FA;
+    --bg-card: #FFFFFF;
+    --border-light: #F0F0F0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: var(--text-primary);
+    background-color: var(--bg-page);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 隐藏滚动条但保留滚动功能 */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .tap-highlight-none {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "luwashenqi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "遛娃神器 - 按孩子年龄和地域智能推荐遛娃地点",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:mobile": "pnpm --filter mobile start",
+    "build:web": "pnpm --filter web build",
+    "lint": "pnpm --filter '*' lint",
+    "type-check": "pnpm --filter '*' type-check",
+    "test": "pnpm --filter '*' test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.0"
+  }
+}
