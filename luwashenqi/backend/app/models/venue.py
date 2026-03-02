@@ -33,6 +33,7 @@ class VenueBase(BaseModel):
     parking_info: Optional[str] = None
     stroller_friendly: bool = True
     has_restrooms: bool = True
+    data_source: str = Field('manual', max_length=20)  # mock | google_places | yelp | manual
 
 
 class VenueInDB(VenueBase):
